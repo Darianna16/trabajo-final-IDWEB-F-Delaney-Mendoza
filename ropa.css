@@ -1,0 +1,20 @@
+.ropa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+img {
+    width: 200px;
+    border-radius: 10px;
+    border: 3px ridge #a5b1c2;
+    margin: 5px;
+    align-items:center;
+}
+.card {
+    transition: 0.5s ease;
+    cursor:pointer;;
+}
+.ropa:hover > :not(:hover) {
+    opacity:0.3;
+}

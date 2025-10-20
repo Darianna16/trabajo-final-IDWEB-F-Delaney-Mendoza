@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content:center;
+    align-items:self-start;
+    min-height: 100vh;
+    margin:0;
+    background-color: #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-nav {
+    display: flex;
+    gap: 30px;
+}
+.menu-nav a {
+    position: relative;
+    color: #eee;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 0;
+    transition: .5s ease;
+}
+.menu-nav a:hover {
+    color: #34e7e4;
+}
+.menu-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #34e7e4;
+    transition: width 0.3s ease;
+}
+.menu-nav a:hover::after {
+    width: 100%;
+}
