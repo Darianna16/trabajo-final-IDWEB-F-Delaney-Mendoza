@@ -7,29 +7,69 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="fondo">
-            <h2>Cuenta</h2>
-            <form>
+        <main class="fondo">
+            <article>
+                <header>
+                    <h2>Registrarse</h2><br>
+                </header>
+                <form>
+                <h2>Información personal</h2>
                 <div class="grupo">
-                    <label>Nombre de Usuario: </label> <br>
-                    <input type="text" required>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                    <br><br>
                 </div>
                 <div class="grupo">
-                    <label>Contraseña: </label> <br>
-                    <input type="password" required>
+                    <label for="apellido">Apellidos:</label><br>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingresa tus apellidos" required>
+                    <br><br>
                 </div>
-                <div class="recordar">
-                    <input type="checkbox">
-                    <label>Recuerdame </label> <br>
-                    <a href="#">Olvide mi contraseña</a>
+                <div class="grupo">
+                    <label for="tipo_doc">Tipo de documento:</label><br>
+                    <select id="tipo_doc" name="tipo_doc" required>
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="dni">DNI</option>
+                            <option value="ce">Carné de Extranjería</option>
+                            <option value="pasaporte">Pasaporte</option>
+                    </select>
+                    <br><br>
+                </div>
+                <div class="grupo">
+                    <label for="documento">Documento de Identidad:</label><br>
+                    <input type="text" id="documento" name="documento" placeholder="Número de documento" required>
+                    <br><br>
+                </div>
+                <div class="grupo">
+                    <label for="telefono">Número de Teléfono:</label><br>
+                    <input type="text" id="telefono" name="telefono" placeholder="Número de telefono" required>
+                    <br><br>
+                </div>
+                <h2>Seguridad de la Cuenta</h2>
+                <div class="grupo">
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@gmail.com" required>
+                    <br><br>
+                </div>
+                <div class="grupo">
+                    <label for="contraseña">Contraseña: </label> <br>
+                    <input type="password" id="contraseña" name="contaseña" required>
+                </div>
+                <h2>Terminos y condiciones</h2>
+                <div class="condiciones">
+                    <input type="checkbox" id="condiciones" name="condiciones">
+                    <label>Acepto terminos y condiciones </label> <br>
+                </div>
+                <div class="promociones">
+                    <input type="checkbox" id="promociones" name="promociones">
+                    <label>Autorizo el envio de promociones</label> <br>
                 </div>
                 <br>
-                <button type="submit" class="login-btn">ingresar</button>
-                <div class="registrar">
-                    <p>¿Aun no tienes una cuenta?</p>
-                    <a href="#">Registrarse</a>
-                </div>
-            </form>
+                <button type="submit" class="login-btn">Crear una cuenta</button><br>
+                </form>
+            </article>
+            
+        </main>
+        <hr>
         </div>
     </body>
 </html>
