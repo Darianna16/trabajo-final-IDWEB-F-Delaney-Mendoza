@@ -3,76 +3,105 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"content>
-        <title>Sitio de Bebidas</title>
-        <link rel="stylesheet" href="styles.css">
+        <title>The Belmont Label</title>
+        <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
-        <nav class="menu-nav">
-            <a href="#">Inicio</a>
-            <a href="#">Ropa</a>
-            <a href="#">Calzado</a>
-            <a href="#">Promociones</a>
-            <a href="#">Contactos</a>
-    </nav>
-        <main class="fondo">
+        <header>
+            <h1>The Belmont Label</h1>
+            <nav class="menu-nav">
+                <div>
+                    <a href="index.html">Inicio</a>
+                    <a href="ropa.html">Ropa</a>
+                    <a href="calzado.html">Calzado</a>
+                    <a href="promociones.html">Promociones</a>
+                </div>
+                <div>
+                    <a href="sesion.html">Iniciar Sesión</a>
+                </div>
+            </nav>
+        </header>
+        <main class="formulario">
             <article>
-                <header>
-                    <h2>Iniciar Sesión</h2>
-                </header>
-            <form>
+                <h1 class="form">Registrarse</h1>
+                <form class="formulario">
+                <h2>Información personal</h2>
+                <div class="grupo">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                    <br><br>
+                </div>
+                <div class="grupo">
+                    <label for="apellido">Apellidos:</label><br>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingresa tus apellidos" required>
+                    <br><br>
+                </div>
+                <div class="grupo">
+                    <label for="tipo_doc">Tipo de documento:</label><br>
+                    <select id="tipo_doc" name="tipo_doc" required>
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="dni">DNI</option>
+                            <option value="ce">Carné de Extranjería</option>
+                            <option value="pasaporte">Pasaporte</option>
+                    </select>
+                    <br><br>
+                </div>
+                <div class="grupo">
+                    <label for="documento">Documento de Identidad:</label><br>
+                    <input type="text" id="documento" name="documento" placeholder="Número de documento" required>
+                    <br><br>
+                </div>
+                <div class="grupo">
+                    <label for="telefono">Número de Teléfono:</label><br>
+                    <input type="text" id="telefono" name="telefono" placeholder="Número de telefono" required>
+                    <br><br>
+                </div>
+                <h2>Seguridad de la Cuenta</h2>
                 <div class="grupo">
                     <label for="email">Correo electrónico:</label><br>
                     <input type="email" id="email" name="email" placeholder="tucorreo@gmail.com" required>
                     <br><br>
                 </div>
                 <div class="grupo">
-                    <label>Contraseña: </label> <br>
-                    <input type="password" required>
+                    <label for="contraseña">Contraseña: </label> <br>
+                    <input type="password" id="contraseña" name="contaseña" placeholder="********" required>
                 </div>
-                <div class="recordar">
-                    <input type="checkbox">
-                    <label>Recuerdame </label> <br>
+                <h3>Terminos y condiciones</h3>
+                <div class="condiciones">
+                    <input type="checkbox" id="condiciones" name="condiciones">
+                    <label>Acepto terminos y condiciones </label> <br>
+                </div>
+                <div class="promociones">
+                    <input type="checkbox" id="promociones" name="promociones">
+                    <label>Autorizo el envio de promociones</label> <br>
                 </div>
                 <br>
-                <button type="submit" class="login-btn">ingresar</button><br>
-                <a href="#">Olvide mi contraseña</a>
-                <div class="registrar">
-                    <p>¿Aun no tienes una cuenta?</p>
-                    <button type="submit" class="login-btn">Continuar con invitado</button>
-                    <button type="submit" class="login-btn">Registrarse</button><br>
-                </div>
-            </form>
+                <button type="submit" class="login-btn">Crear una cuenta</button><br>
+                </form>
             </article>
         </main>
         <hr>
-        <footer>
-            <p class="grid-item">Sobre Nosotros
-                <ul>
-                    <p>Nuestra Compañia</p>
-                    <p>Nuestras bebidas</p>
-                    <p>Servivio al cliente</p>
-                </ul>
-            </p>
-            <p class="grid-item">Sobre Nosotros
-                <ul>
-                    <p>Nuestra Compañia</p>
-                    <p>Nuestras bebidas</p>
-                    <p>Servivio al cliente</p>
-                </ul>
-            </p>
-            <p class="grid-item">Lema
-                <ul>
-                    <p>Visión</p>
-                    <p>Misión</p>
-                </ul>
-            </p>
-            <p class="grid-item">Atención al cliente
-                <ul>
-                    <p>Teléfono Lima:<br>(01)505-0050</p>
-                    <p>Teléfono Provincia:<br> (COD)779-009</p>
-                    <p>Comprobantes electrónicos</p>
-                </ul>
-            </p>
-        </footer>
+        <footer class="footer-container">
+    <div class="footer">
+      <h4>THE BELMONT<br><em>label</em></h4>
+      <p>Diseño atemporal y materiales cuidadosamente seleccionados. 
+        The Belmont Label celebra la elegancia discreta — colecciones cápsula inspiradas en el estilo clásico con un toque contemporáneo.
+      </p>
+    </div>
+    <div>
+      <h4>Suscríbete</h4>
+      <p>Únete a nuestra lista y recibe un 10% en tu primera compra.</p>
+      <input type="email" placeholder="Tu correo" required><br>
+      <button>Enviar</buton>
+    </div>
+    <div>
+      <h4>Redes sociales</h4>
+      <ul>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://es.pinterest.com/">Pinterest</a>
+        <a  href="https://www.tiktok.com/">Tiktok</a>
+      </ul>
+    </div>
+  </footer>
     </body>
 </html>

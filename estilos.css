@@ -10,36 +10,62 @@ header {
   padding: 15px 0;
   text-align: center;
 }
-h1 { margin: 0; }
+h1 { 
+  margin: 0; 
+  font-family: 'Playfair Display', serif;
+  color:whitesmoke;
+}
 .menu-nav {
     display: flex;
     gap: 30px;
     margin-top: 20px;
 }
 h2{color:#eee}
+.promo img {
+  width:200px;
+  border-radius:20px;
+}
+h3{color:rgb(20, 19, 20)}
+a {text-decoration: none; color:gray}
+.registro-link:hover {
+  color: whitesmoke;         
+}
+p {color:whitesmoke}
+label {color:whitesmoke;}
+.menu-nav {
+  display: flex;                /* activa flexbox */
+  justify-content: space-between; /* separa los extremos (izquierda/derecha) */
+  align-items: center;           /* centra verticalmente */
+  gap: 30px;                     /* separación entre enlaces */
+}
+
+/* enlaces del menú */
 .menu-nav a {
-    position: relative;
-    color: #eee;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 0;
-    transition: .5s ease;
+  position: relative;
+  color: #eee;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 0;
+  transition: .5s ease;
 }
+
 .menu-nav a:hover {
-    color: #8212eb;
+  color: #8212eb;
 }
+
 .menu-nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: #8212eb;
-    transition: width 0.3s ease;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #8212eb;
+  transition: width 0.3s ease;
 }
+
 .menu-nav a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 .inicio {
   display: flex;
@@ -74,6 +100,7 @@ h2{color:#eee}
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   padding: 20px;
+  color:black;
 }
 .producto {
   text-align: center;
@@ -86,7 +113,19 @@ h2{color:#eee}
   width: 100%;
   border-radius: 10px;
 }
-
+.producto-inicio {
+  text-align: center;
+  padding: 1px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.producto-inicio img {
+  width: 100%;
+  height: 400px;       
+  object-fit: contain;   
+  border-radius: 10px;
+}
 .grid-promos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -94,12 +133,12 @@ h2{color:#eee}
   padding: 30px;
 }
 .promo {
-  background-color: #ffe4ec;
+  background-color: #e2befa;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
 }
-
+.form {text-align: center;}
 .formulario {
   display: flex;
   flex-direction: column;
@@ -123,11 +162,29 @@ h2{color:#eee}
 .formulario button:hover {
   background-color: #8212eb;
 }
-
+.prenda img {
+  width:200px;
+  border-radius: 10px;
+}
 footer {
   background-color: #111;
   color: white;
   text-align: center;
   padding: 15px 0;
   margin-top: 30px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 20px;
+  padding: 30px;
+}
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+.acciones {
+  display: flex;
+  color:#8212eb;
+  justify-content: left;
 }
