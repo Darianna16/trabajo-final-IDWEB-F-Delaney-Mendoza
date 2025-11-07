@@ -30,7 +30,6 @@ a {text-decoration: none; color:gray}
 .registro-link:hover {
   color: whitesmoke;         
 }
-p {color:whitesmoke}
 label {color:whitesmoke;}
 .menu-nav {
   display: flex;                /* activa flexbox */
@@ -182,9 +181,4 @@ footer {
 footer a {
   color: inherit;
   text-decoration: none;
-}
-.acciones {
-  display: flex;
-  color:#8212eb;
-  justify-content: left;
 }
