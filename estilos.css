@@ -26,7 +26,8 @@ h2{color:#eee}
   border-radius:20px;
 }
 h3{color:rgb(20, 19, 20)}
-a {text-decoration: none; color:gray}
+h4 {color:whitesmoke; font-weight: normal;}
+a {text-decoration: none; color:gray;}
 .registro-link:hover {
   color: whitesmoke;         
 }
