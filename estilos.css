@@ -33,13 +33,12 @@ a {text-decoration: none; color:gray;}
 }
 label {color:whitesmoke;}
 .menu-nav {
-  display: flex;                /* activa flexbox */
-  justify-content: space-between; /* separa los extremos (izquierda/derecha) */
-  align-items: center;           /* centra verticalmente */
-  gap: 30px;                     /* separación entre enlaces */
+  display: flex;                
+  justify-content: space-between; 
+  align-items: center;           
+  gap: 30px;                     
 }
-
-/* enlaces del menú */
+.banner {width: 100%;}
 .menu-nav a {
   position: relative;
   color: #eee;
@@ -111,7 +110,7 @@ label {color:whitesmoke;}
 }
 .producto img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .producto-inicio {
   text-align: center;
@@ -124,7 +123,7 @@ label {color:whitesmoke;}
   width: 100%;
   height: 400px;       
   object-fit: contain;   
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .grid-promos {
   display: grid;
