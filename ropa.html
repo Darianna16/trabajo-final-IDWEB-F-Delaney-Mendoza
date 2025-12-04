@@ -14,6 +14,7 @@
           <a href="calzado.html">Calzado</a>
           <a href="promociones.html">Promociones</a>
           <a href="sesion.html">Iniciar Sesión</a>
+          <a href="carrito.html"><img src="img/carrito.png" alt="carrito" width=35></a>
     </nav>
   </header>
 
@@ -24,46 +25,55 @@
         <img src="img/39664da9df7ba07e377a63d53291fd2b.jpg" alt="Camiseta básica">
         <h3>Camiseta básica</h3>
         <p>S/.49.90</p>
+        <button class="boton-carrito comprar" onclick="agregarAlCarrito('Camiseta básica', 49.90, 'img/39664da9df7ba07e377a63d53291fd2b.jpg'); animarBoton(this)">Agregar al carrito</button>
       </div>
       <div class="producto" id="chaqueta-denim">
         <img src="img/f8edc45728642a6b78869f25683d9c76.jpg" alt="Chaqueta denim">
         <h3>Chaqueta denim</h3>
         <p>S/.129.90</p>
+        <button class="boton-carrito comprar" onclick="agregarAlCarrito('Chaqueta denim', 129.90, 'img/f8edc45728642a6b78869f25683d9c76.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
       <div class="producto" id="pantalon-cargo">
         <img src="img/ec8f85b68b6963c5c2ab4b78165a310a.jpg" alt="Pantalón cargo">
         <h3>Pantalón cargo</h3>
         <p>S/.89.90</p>
+        <button  class="boton-carrito comprar" onclick="agregarAlCarrito('Pantalón cargo', 89.90, 'img/ec8f85b68b6963c5c2ab4b78165a310a.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
       <div class="producto" id="saco-negro">
         <img src="img/962ca7095c83324fb810fe4fc7e8d36e.jpg" alt="saco negro">
         <h3>Saco negro</h3>
         <p>S/.129.90</p>
+        <button  class="boton-carrito comprar" onclick="agregarAlCarrito('Saco negro', 129.90, 'img/962ca7095c83324fb810fe4fc7e8d36e.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
       <div class="producto" id="casaca-cuero">
         <img src="img/1a85e0ea7fa7434f70fc5d77e0bece3b.jpg" alt="casaca cuero">
         <h3>Casaca de cuero</h3>
         <p>S/.150.90</p>
+        <button  class="boton-carrito comprar" onclick="agregarAlCarrito('Casaca de cuero', 150.90, 'img/1a85e0ea7fa7434f70fc5d77e0bece3b.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
       <div class="producto" id="chompa-azul">
         <img src="img/3293b722cd8484a23201a219ee508cf4.jpg" alt="chompa azul con botones dorados">
-        <h3>Chompa de lana azul</h3>
+        <h3>Chompa de lana azul marino</h3>
         <p>S/.80.50</p>
+        <button  class="boton-carrito comprar" onclick="agregarAlCarrito('Chompa de lana azul marino', 80.50, 'img/3293b722cd8484a23201a219ee508cf4.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
       <div class="producto" id="camisa-satin">
         <img src="img/00966c5eb1168cd2016210314bcf94ba.jpg" alt="camisa de satin">
         <h3>Camisa de satín</h3>
         <p>S/.69.90</p>
+        <button  class="boton-carrito comprar" onclick="agregarAlCarrito('Camisa de satín', 69.90, 'img/00966c5eb1168cd2016210314bcf94ba.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
       <div class="producto" id="polo-mangalarga">
         <img src="img/001dbb30bc22662902f0d2e43be17757.jpg" alt="polo manga larga cafe">
         <h3>Polo manga larga</h3>
         <p>S/.70.60</p>
+        <button  class="boton-carrito comprar" onclick="agregarAlCarrito('Polo de manga larga', 70.60, 'img/001dbb30bc22662902f0d2e43be17757.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
       <div class="producto" id="jean-negro">
         <img src="img/033dc983e6564fd92971daf1e54a7e02.jpg" alt="jean negro">
         <h3>Hazel Blues</h3>
         <p>S/.120.90</p>
+        <button  class="boton-carrito comprar" onclick="agregarAlCarrito('Hazel Blues', 120.90, 'img/033dc983e6564fd92971daf1e54a7e02.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
     </div>
   </main>
@@ -90,5 +100,7 @@
       </ul>
     </div>
   </footer>
+  <script src="carrito.js"></script>
+
 </body>
 </html>

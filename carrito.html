@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito - The Belmont Label</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <header>
+    <h1>The Belmont Label</h1>
+   <nav class="menu-nav">
+          <a href="index.html">Inicio</a>
+          <a href="ropa.html" class="activo">Ropa</a>
+          <a href="calzado.html">Calzado</a>
+          <a href="promociones.html">Promociones</a>
+          <a href="sesion.html">Iniciar Sesión</a>
+          <a href="carrito.html"><img src="img/carrito.png" alt="carrito" width=35></a>
+    </nav>
+    </header>
+    <main class="carrito-container">
+        <section class="productos">
+            <h2>Carro (<span id="cantidad-productos">0</span> productos)</h2>
+            <div id="lista-carrito"></div>
+        </section>
+
+        <aside class="resumen">
+                <h3>Resumen de la orden</h3>
+                <div class="resumen-detalle">
+                <p>Subtotal: <span id="subtotal">S/.0.00</span></p>
+                <hr>
+                <p><strong>Total:</strong> <span id="total">S/.0.00</span></p>
+            </div>
+            <button id="continuar">Continuar compra</button>
+        </aside>
+    </main>
+    <footer class="footer-container">
+    <div class="footer">
+      <h4>THE BELMONT<br><em>label</em></h4>
+      <p>Diseño atemporal y materiales cuidadosamente seleccionados. 
+        The Belmont Label celebra la elegancia discreta — colecciones cápsula inspiradas en el estilo clásico con un toque contemporáneo.
+      </p>
+    </div>
+    <div>
+      <h4>Suscríbete</h4>
+      <p>Únete a nuestra lista y recibe un 10% en tu primera compra.</p>
+      <input type="email" placeholder="Tu correo" required><br>
+      <button>Enviar</buton>
+    </div>
+    <div>
+      <h4>Redes sociales</h4>
+      <ul>
+        <a href="https://www.instagram.com/"><img src="img/2111463.png" width="20"></a>
+        <a href="https://es.pinterest.com/"><img src="img/pinterest-6930796_1280.webp" width="20"></a>
+        <a  href="https://www.tiktok.com/"><img src="img/tiktok.webp" width="20"></a>
+      </ul>
+    </div>
+  </footer>
+    <script src="carrito.js"></script>
+</body>
+</html>

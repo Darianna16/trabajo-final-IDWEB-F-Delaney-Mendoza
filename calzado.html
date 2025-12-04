@@ -14,7 +14,7 @@
           <a href="calzado.html" class="activo">Calzado</a>
           <a href="promociones.html">Promociones</a>
           <a href="sesion.html">Iniciar Sesión</a>
-                
+          <a href="carrito.html"><img src="img/carrito.png" alt="carrito" width=35></a>     
     </nav>
     </header>
   <main>
@@ -24,36 +24,43 @@
         <img src="img/d05285e340c7b7313b138f0cf158803c.jpg" alt="Zapatillas urbanas">
         <h3>Zapatillas urbanas</h3>
         <p>S/.179.90</p>
+        <button class="boton-carrito comprar" onclick="agregarAlCarrito('Zapatillas urbanas', 179.90, 'img/d05285e340c7b7313b138f0cf158803c.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
       <div class="producto">
         <img src="img/1b1d0a119301a3cf90acba698dd85488.jpg" alt="Botines clásicos">
         <h3>Botines clásicos</h3>
         <p>S/.149.90</p>
+        <button class="boton-carrito comprar" onclick="agregarAlCarrito('Botines clásicos', 149.90, 'img/1b1d0a119301a3cf90acba698dd85488.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
       <div class="producto">
         <img src="img/147a6ee772f465a901088d269921895b.jpg" alt="Sandalias cómodas">
         <h3>Sandalias cómodas</h3>
         <p>S/.59.90</p>
+        <button class="boton-carrito comprar" onclick="agregarAlCarrito('Sandalias cómodas', 59.90, 'img/147a6ee772f465a901088d269921895b.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
       <div class="producto">
         <img src="img/321a635642a87f1b1bc5d6184b16934f.jpg" alt="botines negros">
         <h3>Botas bajas</h3>
         <p>S/.89.90</p>
+        <button class="boton-carrito comprar" onclick="agregarAlCarrito('Botas bajas', 89.90, 'img/321a635642a87f1b1bc5d6184b16934f.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
       <div class="producto">
         <img src="img/66f1b173e5c47075ec5a6d4af23029c0.jpg" alt="Balley flats">
         <h3>Ballet flats</h3>
         <p>S/.149.90</p>
+        <button class="boton-carrito comprar" onclick="agregarAlCarrito('Balley flats', 149.90, 'img/66f1b173e5c47075ec5a6d4af23029c0.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
       <div class="producto">
         <img src="img/094daf5d13b36c790476e4744c259fc7.jpg" alt="tacones negros">
         <h3>Tacones negros</h3>
         <p>S/.79.60</p>
+        <button class="boton-carrito comprar" onclick="agregarAlCarrito('Tacones negros', 79.60, 'img/094daf5d13b36c790476e4744c259fc7.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
       <div class="producto">
         <img src="img/dfd526736fc296a70dbb6b28ba3506af.jpg" alt="zapatos negros">
         <h3>Zapatos con tacón</h3>
         <p>S/.110.90</p>
+        <button class="boton-carrito comprar" onclick="agregarAlCarrito('Zapatos negros', 110.90, 'img/dfd526736fc296a70dbb6b28ba3506af.jpg'); animarBoton(this)">Añadir al carrito</button>
       </div>
     </div>
   </main>
@@ -80,5 +87,6 @@
       </ul>
     </div>
   </footer>
+  <script src="carrito.js"></script>
 </body>
 </html>
