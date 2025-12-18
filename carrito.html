@@ -42,11 +42,16 @@
       </p>
     </div>
     <div>
-      <h4>Suscríbete</h4>
-      <p>Únete a nuestra lista y recibe un 10% en tu primera compra.</p>
-      <input type="email" placeholder="Tu correo" required><br>
-      <button>Enviar</buton>
-    </div>
+  <h4>Suscríbete</h4>
+  <p>Únete a nuestra lista y recibe un 10% en tu primera compra.</p>
+
+  <form action="/suscribirse" method="POST">
+    <input type="email" name="email" placeholder="Tu correo" required>
+    <br>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
     <div>
       <h4>Redes sociales</h4>
       <ul>

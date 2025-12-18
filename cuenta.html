@@ -21,7 +21,7 @@
         <main class="formulario">
             <article>
                 <h1 class="form">Registrarse</h1>
-                <form class="formulario">
+                <form class="formulario" id="registroForm">
                 <h2>Información personal</h2>
                 <div class="grupo">
                     <label for="nombre">Nombre:</label><br>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="grupo">
                     <label for="contraseña">Contraseña: </label> <br>
-                    <input type="password" id="contraseña" name="contaseña" placeholder="********" required>
+                    <input type="password" id="password" name="password" placeholder="********" required>
                 </div>
                 <h3>Terminos y condiciones</h3>
                 <div class="condiciones">
@@ -74,6 +74,8 @@
                 </div>
                 <br>
                 <button type="submit" class="login-btn">Crear una cuenta</button><br>
+                <p id="mensaje"></p>
+
                 </form>
             </article>
         </main>
@@ -86,11 +88,16 @@
       </p>
     </div>
     <div>
-      <h4>Suscríbete</h4>
-      <p>Únete a nuestra lista y recibe un 10% en tu primera compra.</p>
-      <input type="email" placeholder="Tu correo" required><br>
-      <button>Enviar</buton>
-    </div>
+  <h4>Suscríbete</h4>
+  <p>Únete a nuestra lista y recibe un 10% en tu primera compra.</p>
+
+  <form action="/suscribirse" method="POST">
+    <input type="email" name="email" placeholder="Tu correo" required>
+    <br>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
     <div>
       <h4>Redes sociales</h4>
       <ul>
@@ -100,5 +107,6 @@
       </ul>
     </div>
   </footer>
+  <script src="registro.js"></script>
     </body>
 </html>
